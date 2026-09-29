@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: rgb(20, 19, 19);
+    color: aliceblue;
+}
+header{
+    box-sizing: border-box;
+    border: 1px solid aqua;
+    padding: 10px;
+    border-radius: 9px;
+}
+header h1{
+    font-size: 30px;
+    color: rgba(127, 255, 212, 0.805);
+}
+header p{
+    font-size: 15px;
+}
+.student-info-section{
+    box-sizing: border-box;
+    border: 1px solid aqua;
+    padding: 10px;
+    border-radius: 9px;
+    margin-top: 15px;
+}
