@@ -9,7 +9,7 @@
     * {
         box-sizing: border-box;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        padding: 4px;
+        padding: 5px;
     }
 
     body {
@@ -33,6 +33,7 @@
 
         background-color: #111827;
         color: #F8FAFC;
+        margin-top: 16px;
     }
 
     header h1 {
@@ -71,6 +72,7 @@
 
         background-color: #111827;
         color: #F8FAFC;
+        margin-top: 30px;
     }
 
     .student-info-section h2 {
@@ -126,6 +128,8 @@
 
         background-color: #111827;
         color: #F8FAFC;
+
+        margin-top: 30px;
     }
 
     .mark-section h2 {
@@ -168,6 +172,7 @@
     .calculate {
         width: 100%;
         margin-top: 15px;
+        margin-top: 20px;
     }
 
     .calculate button {
@@ -208,6 +213,8 @@
         color: #F8FAFC;
 
         overflow-wrap: break-word;
+
+        margin-top: 15px;
     }
 
     .result-section h2 {
@@ -259,3 +266,6 @@
 /* ========================================
    MOBILE RESPONSIVE — END
 ======================================== */
+
+
+
