@@ -1,120 +1,261 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-body{
-    background-color: rgb(20, 19, 19);
-    color: aliceblue;
-}
-header{
-    box-sizing: border-box;
-    border: 1px solid aqua;
-    padding: 10px;
-    border-radius: 9px;
-}
-header h1{
-    font-size: 30px;
-    color: rgba(127, 255, 212, 0.805);
-}
-header p{
-    font-size: 15px;
-}
-.student-info-section{
-    box-sizing: border-box;
-    border: 1px solid #00ffff;
-    border-radius: 9px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-}
-.student-info-section h2{
-    font-size: 25px;
-}
-.student-info-section label {
-    font-size: 20px;
-}
-.student-info-section input{
-    border: 1px solid aqua;
-    background: rgb(12, 12, 12);
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 8px;
-    color: aliceblue;
-}
-.student-info-section input:hover{
-    background-color: aqua;
-}
-.mark-section{
-    box-sizing: border-box;
-    border: 1px solid aqua;
-    padding: 10px;
-    border-radius: 9px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-}
-.mark-section h2{
-    font-size: 25px;
-    text-align: center;
-}
-.mark-section label{
-    font-size: 20px;
-}
-.mark-section input{
-    border: 1px solid aqua;
-    background: rgb(12, 12, 12);
-    border-radius: 5px;
-    cursor: pointer;
-    color: aliceblue;
-}
-.mark-section input:hover{
-    background-color: aqua;
-}
-.calculate{
-    margin-top: 15px;
-}
-.calculate button{
-    padding: 4px;
-    font-size: 14px;
-    border: 1px solid aqua;
-    background-color: black;
-    color: aliceblue;
-    font-family: monospace;
-    letter-spacing: 1.2px;
-    border-radius:7px;
-    cursor: pointer;
-    width: 178px;
-}
-.calculate button:hover{
-    background-color: aqua;
-}
-.result-section{
-    box-sizing: border-box;
-    border: 1px solid aqua;
-    border-radius: 9px;
-    margin-top: 15px;
-    padding: 12px;
-}
-.result-section p{
-    font-size: 15px;
-}
-.result-section h2{
-    text-align: center;
-}
-.result-section span{
-    color: #00ffff;
-}
-.footer{
-    margin-top: 20px;
-    padding: 15px;
-    text-align: center;
-    border: 1px solid aqua;
-    border-radius: 9px;
+/* ========================================
+   MOBILE RESPONSIVE — DARK NAVY + BLUE
+======================================== */
+
+@media (max-width: 768px) {
+
+    /* ---------- GLOBAL ---------- */
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 4px;
+    }
+
+    body {
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        background-color: #0B1120;
+        color: #F8FAFC;
+        overflow-x: hidden;
+    }
+
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        width: 100%;
+        padding: 15px;
+
+        border: 1px solid #3B82F6;
+        border-radius: 9px;
+
+        background-color: #111827;
+        color: #F8FAFC;
+    }
+
+    header h1 {
+        margin: 8px 0;
+        color: #e9edf2;
+        font-size: 40px;
+        line-height: 1.2;
+        
+    }
+
+    header p {
+        margin: 8px 0;
+        color: #94A3B8;
+        font-size: 14px;
+        line-height: 1.5;
+        
+    }
+
+    header span{
+        color: #2563EB;
+    }
+
+
+    /* ---------- STUDENT INFO ---------- */
+
+    .student-info-section {
+        width: 100%;
+        margin-top: 15px;
+        padding: 15px;
+
+        display: flex;
+        flex-direction: column;
+
+        border: 1px solid #3B82F6;
+        border-radius: 9px;
+
+        background-color: #111827;
+        color: #F8FAFC;
+    }
+
+    .student-info-section h2 {
+        margin: 5px 0 15px;
+        color: #60A5FA;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .student-info-section label {
+        margin-top: 10px;
+        color: #F8FAFC;
+        font-size: 17px;
+    }
+
+    .student-info-section input {
+        width: 100%;
+        height: 40px;
+        margin-top: 6px;
+        padding: 8px;
+
+        border: 1px solid #3B82F6;
+        border-radius: 8px;
+
+        background-color: #070D18;
+        color: #F8FAFC;
+
+        font-size: 15px;
+        outline: none;
+    }
+    .student-info-section input:hover{
+        background-color: #3B82F6;
+    }
+
+    .student-info-section input:hover,
+    .student-info-section input:focus {
+        border-color: #60A5FA;
+    }
+
+
+    /* ---------- MARK SECTION ---------- */
+
+    .mark-section {
+        width: 100%;
+        margin-top: 15px;
+        padding: 15px;
+
+        display: flex;
+        flex-direction: column;
+
+        border: 1px solid #3B82F6;
+        border-radius: 9px;
+
+        background-color: #111827;
+        color: #F8FAFC;
+    }
+
+    .mark-section h2 {
+        margin: 5px 0 15px;
+        color: #60A5FA;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .mark-section label {
+        margin-top: 12px;
+        color: #F8FAFC;
+        font-size: 18px;
+    }
+
+    .mark-section input {
+        width: 100%;
+        height: 40px;
+        margin-top: 6px;
+        padding: 8px;
+
+        border: 1px solid #3B82F6;
+        border-radius: 5px;
+
+        background-color: #070D18;
+        color: #F8FAFC;
+
+        font-size: 15px;
+        outline: none;
+    }
+
+    .mark-section input:hover,
+    .mark-section input:focus {
+        border-color: #61a8ff;
+    }
+
+
+    /* ---------- CALCULATE BUTTON ---------- */
+
+    .calculate {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .calculate button {
+        width: 100%;
+        min-height: 42px;
+        padding: 10px;
+
+        border: 1px solid #2563EB;
+        border-radius: 7px;
+
+        background-color: #2563EB;
+        color: #FFFFFF;
+
+        font-family: monospace;
+        font-size: 15px;
+        letter-spacing: 1.2px;
+
+        cursor: pointer;
+    }
+
+    .calculate button:hover {
+        background-color: #3B82F6;
+        border-color: #3B82F6;
+    }
+
+
+    /* ---------- RESULT SECTION ---------- */
+
+    .result-section {
+        width: 100%;
+        margin-top: 15px;
+        padding: 15px;
+
+        border: 1px solid #3B82F6;
+        border-radius: 9px;
+
+        background-color: #111827;
+        color: #F8FAFC;
+
+        overflow-wrap: break-word;
+    }
+
+    .result-section h2 {
+        margin: 5px 0 15px;
+        color: #60A5FA;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .result-section p {
+        margin: 8px 0;
+        color: #F8FAFC;
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    .result-section span {
+        color: #60A5FA;
+        margin-left: 20px;
+    }
+
+
+    /* ---------- FOOTER ---------- */
+
+    .footer {
+        width: 100%;
+        margin-top: 15px;
+        padding: 12px;
+
+        border: 1px solid #3B82F6;
+        border-radius: 9px;
+
+        background-color: #111827;
+        color: #F8FAFC;
+
+        text-align: center;
+    }
+
+    .footer p {
+        margin: 5px 0;
+        color: #94A3B8;
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
 }
 
-.footer p{
-    margin: 5px;
-    font-size: 14px;
-}
+
+/* ========================================
+   MOBILE RESPONSIVE — END
+======================================== */
